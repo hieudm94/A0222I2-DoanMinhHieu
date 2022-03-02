@@ -1,0 +1,9 @@
+Begin
+ Input N
+ N = a1, a2, a3... an
+ If a1 = max
+ Display a1 lớn nhất
+ Else
+ 
+
+End

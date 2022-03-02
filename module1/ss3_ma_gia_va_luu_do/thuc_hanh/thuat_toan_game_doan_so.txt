@@ -1,0 +1,8 @@
+Begin
+  N là số ngẫu nhiên trong khoảng từ 0 đến 9
+  Input M
+  If M==N
+    Display "Đúng"
+  ELSE
+    Display "Sai"
+End

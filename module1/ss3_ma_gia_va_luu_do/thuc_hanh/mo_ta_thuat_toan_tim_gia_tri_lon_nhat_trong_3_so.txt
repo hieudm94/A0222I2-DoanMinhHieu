@@ -1,0 +1,12 @@
+Begin
+   Input a
+   Input b
+   Input c
+  If a > b and a > c
+  Display a lớn nhất
+  Else 
+  If b > c
+  Display b lớn nhất
+  Else 
+  Display c lớn nhất
+End
