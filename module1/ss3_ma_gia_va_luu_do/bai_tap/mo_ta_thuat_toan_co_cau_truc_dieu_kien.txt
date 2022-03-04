@@ -1,0 +1,21 @@
+Begin
+  Input point
+  If point =>75 
+     Display "Loại A"
+  Else
+     If 60 <= point <75
+        Display "Loại B"
+     Else
+        If 45 <= point <75
+           Display "Loại C"
+        Else
+           If 35 <= point <45
+              Display "Loại D"
+           Else 
+           Display "Loại E"
+           End If
+         End If
+      End If
+    End If
+End
+
