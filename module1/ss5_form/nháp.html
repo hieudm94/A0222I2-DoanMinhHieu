@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Table simple</title>
-    <style>{
-        mso-ascii-font-family: sans-serif, arial
-    ;
-    }
-
-
-
+    <title> Table simple </title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
     </style>
 </head>
 <body>
@@ -36,7 +42,7 @@
     </tr>
     <tr>
         <td>Island Trading</td>
-        <td>Helen bennett</td>
+        <td>Helen Bennett</td>
         <td>UK</td>
     </tr>
     <tr>
@@ -50,6 +56,5 @@
         <td>Italy</td>
     </tr>
 </table>
-
 </body>
 </html>

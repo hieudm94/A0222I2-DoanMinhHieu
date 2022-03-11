@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Tạo bảng đơn giản</title>
+    <style>
+    td.mid{
+        text-align: center;
+    }
+    h2.mid{
+        text-align: center;
+    }
+    </style>
 </head>
 <body>
-<h2>Thời khóa biểu</h2>
-<p>Lớp: T0908I gian học: 13h30-17h30</p>
-<p>Giáo viên: Khóa NV ngày học: Thứ 3,5,7</p>
-<p>Phòng học: Class3/Lab3</p>
-<table border="1">
+<h2 class="mid" style="color: blue">Thời khóa biểu</h2>
+<span style="color: blue">Lớp: T0908I</span> <span style="color: blue">Thời gian học: 13h30-17h30</span></br>
+<span style="color: blue">Giáo viên: Khóa NV</span> <span style="color: blue"> ngày học: Thứ 3,5,7</span>
+<p style="color: blue">Phòng học: Class3/Lab3</p>
+<table border="1" width="100%">
     <tr>
         <th colspan="3"></th>
         <th style="background-color: yellow">Thứ 3</th>
@@ -20,7 +28,7 @@
         <td>Tuần</td>
         <td>Ngày bắt đầu</td>
         <td>Ngày kết thúc</td>
-        <td colspan="3">Môn Học</td>
+        <td colspan="3" class="mid">Môn Học</td>
     </tr>
     <tr>
         <td>01</td>
@@ -46,7 +54,6 @@
         <td>...</td>
         <td>...</td>
     </tr>
-</table>
 
 </body>
 </html>
