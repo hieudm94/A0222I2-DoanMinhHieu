@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+<table border="0" width="500px" style="background-color: yellow ">
+    <tr>
+        <th>BMI</th>
+        <th>Interpretation</th>
+    </tr>
+    <tr>
+        <td> BMI < 18.5</td>
+        <td>Underweight</td>
+    </tr>
+    <tr>
+        <td>18.5 <= BMI < 25.0</td>
+        <td>Normal</td>
+    </tr>
+    <tr>
+        <td>25.0 <= MBI < 30.0</td>
+        <td>Overweight</td>
+    </tr>
+    <tr>
+        <td>30.0 <= BMI</td>
+        <td>Obese</td>
+    </tr>
+    <tr>
+        <td style="color:green;">Weight</td>
+        <td><input type="number" id="weight"></td>
+    </tr>
+    <tr>
+        <td style="color: green">Height</td>
+        <td><input type="number" id="height"></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="submit()">Submit</button></td>
+    </tr>
+    <tr>
+        <td>BMI</td>
+        <td><input type="text" id="bmi" disabled</td>
+    </tr>
+</table>
+<script>
+    function submit() {
+        let a="Underweight";
+        let b="Normal";
+        let c="Overweight";
+        let d="Obese";
+        let weight = document.getElementById("weight").value;
+        let height = document.getElementById("height").value;
+        let total = weight / (height*2);
+        if (total < 18)
+            document.getElementById("bmi").value= a;
+        else if (total < 25 )
+            document.getElementById("bmi").value= b;
+        else if (total < 30.0 )
+            document.getElementById("bmi").value= c;
+        else
+            document.getElementById("bmi").value= d;
+    }
+</script>
+</body>
+</html>

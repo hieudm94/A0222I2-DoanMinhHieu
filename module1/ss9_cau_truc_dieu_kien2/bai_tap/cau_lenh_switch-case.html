@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu lệnh switch-case</title>
+    <style>
+        table{
+            background-color: orange;
+            margin-left: 500px;
+        }
+    </style>
+</head>
+<body>
+<table border="0" width="500px" id="mid" style="text-align: center" >
+    <tr>
+        <td><input type="number" id="number"></td>
+        <td><button type="submit" onclick="submit()">Tính số ngày</button></td>
+    </tr>
+    <tr>
+        <td><input type="text" disabled id="text"></td>
+    </tr>
+</table>
+<script>
+    function submit() {
+        let a= "Tháng";
+        let b= "ngày";
+        let d= "có"
+        let e= "hoặc"
+        let c=document.getElementById("number").value;
+    switch (c) {
+        case '1':
+        case '3':
+        case '5':
+        case '7':
+        case '8':
+        case '10':
+        case '12':
+            document.getElementById("text").value=(a + c + d + 31 + b);
+            break;
+        case '4':
+        case '6':
+        case '9':
+        case '11':
+            document.getElementById("text").value=(a + c + d + 30 + b);
+            break;
+        default:
+            document.getElementById("text").value=(a + c + d + 28 + e + 29 + b);
+    }
+    }
+</script>
+</body>
+</html>

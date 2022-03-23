@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+        Chiều dài <input type="number" id="weight"></br>
+        Chiều cao <input type="number" id="height"></br>
+        <button type="button" onclick="submit()">Submit</button></br>
+            Diện tích<input type="text" disabled id="s">
+        </td>
+    </tr>
+    <script>
+        function submit() {
+            let a= document.getElementById("weight").value;
+            let b= document.getElementById("height").value;
+            let c=parseInt(a) * parseInt(b);
+            document.getElementById("s").value=c;
+
+        }
+    </script>
+</table>
+</body>
+</html>

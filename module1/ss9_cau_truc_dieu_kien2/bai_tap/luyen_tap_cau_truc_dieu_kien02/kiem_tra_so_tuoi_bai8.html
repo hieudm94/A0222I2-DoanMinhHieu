@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            Nhập số tuổi <input type="number" id="old">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="submit()">Submit</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" disabled id="display">
+        </td>
+    </tr>
+    <script>
+        function submit() {
+            let a = document.getElementById("old").value;
+            if (a < 120 && a > 0 )
+                document.getElementById("display").value=a;
+            else
+                document.getElementById("display").value="Fail";
+
+        }
+    </script>
+</table>
+</body>
+</html>

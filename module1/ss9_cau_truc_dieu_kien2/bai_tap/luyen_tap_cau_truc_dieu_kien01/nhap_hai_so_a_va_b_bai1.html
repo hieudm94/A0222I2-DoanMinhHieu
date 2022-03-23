@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>
+                Số A<input type="number" id="numa" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Số B<input type="number" id="numb">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="clickme()">Submit</button>
+            </td>
+        </tr>
+        <script>
+            function clickme() {
+                let a=document.getElementById("numa").value;
+                let b=document.getElementById("numb").value;
+                let c= parseInt(a) % parseInt(b);
+                if (c == 0)
+                    alert("Chia hết");
+                else
+                    alert("Không chia hết");
+
+            }
+        </script>
+    </table>
+</form>
+</body>
+</html>
