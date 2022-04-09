@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let value = parseInt(prompt("Số lượng phần tử trong hàm cần nhập"));
+    let Array = [];
+    function Check(Array) {
+        for (let i = 0; i < value ; i++){
+           let  number = parseInt(prompt("Input Number"))
+            Array.push(number);
+        }
+        return Array
+    }
+    let result =Check(Array);
+    document.write("After: " + Array + "<br>")
+    document.write("Befor: " + result.reverse());
+</script>
+</body>
+</html>

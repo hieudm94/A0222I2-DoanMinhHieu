@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+<p>Feet</p>
+<input type="number" id="number1" >
+<button onclick="submit1()">feet-->meters</button>
+<p>Meters</p>
+<input type="number" id="number2">
+<button onclick="submit2()">meters-->feet</button>
+<script>
+    function submit1() {
+        let num1 = document.getElementById("number1").value;
+        let calc = num1 * 0.305;
+        document.getElementById('number2').value = calc;
+        return calc;
+    }
+    function submit2() {
+        let num2= document.getElementById("number2").value;
+        let result= num2/0.305;
+        document.getElementById("number1").value=result;
+        return result;
+
+    }
+</script>
+</body>
+</html>

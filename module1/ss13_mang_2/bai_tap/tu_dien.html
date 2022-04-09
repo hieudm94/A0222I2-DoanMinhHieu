@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<input type="text" id="search">
+<button type="button" onclick="submit()">Search</button>
+<p id="result"></p>
+<script>
+    let arrEng= ["home","plan","tree"];
+    let arrVN= ["Nhà", "Kế Hoạch","Cái cây"];
+    function submit() {
+        let result= "";
+        let key= document.getElementById("search").value;
+        let index= arrEng.indexOf(key);
+        if (index != -1){
+            result=arrVN[index];
+        }else{
+            result="not found....";
+        }
+        document.getElementById("result").innerHTML=result;
+    }
+</script>
+</body>
+</html>

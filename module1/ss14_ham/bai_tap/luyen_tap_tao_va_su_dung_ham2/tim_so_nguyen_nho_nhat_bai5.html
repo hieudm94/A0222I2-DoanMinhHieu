@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Array = [];
+    let number= parseInt(prompt("Input number"));
+    Array.push(number);
+    let min = Array[0];
+    function minArray(number) {
+        for (let i = 1 ; i < 3; i++){
+            number = parseInt(prompt("Input number"))
+            Array.push(number)
+            if (Array[i] < min) {
+                Array[i] = min;
+            }
+        } return min;
+    }
+    let result = minArray(number);
+    document.write("số nhỏ nhất là  " + result);
+</script>
+</body>
+</html>

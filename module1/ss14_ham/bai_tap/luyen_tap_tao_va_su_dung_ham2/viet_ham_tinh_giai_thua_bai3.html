@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Input number"));
+    let index = 1;
+    function Array() {
+        for (let i = 1; i <= number; i++){
+            index *= i
+        }
+        return index;
+    }
+    let result = Array(number);
+    document.write("Giai thừa số cần tìm là: " + result);
+</script>
+</body>
+</html>

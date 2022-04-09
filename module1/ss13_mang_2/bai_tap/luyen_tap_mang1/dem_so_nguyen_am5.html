@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt('Nhập số lượng phần tử:');
+    let total = 0;
+    for (let i = 0; i < input; i++) {
+        let Number = prompt('Nhập phần tử:');
+        if (Number < 0) {
+            total++;
+        }
+    }
+    alert('Chuỗi có ' + total + ' số nguyên âm');
+
+
+</script>
+</body>
+</html>

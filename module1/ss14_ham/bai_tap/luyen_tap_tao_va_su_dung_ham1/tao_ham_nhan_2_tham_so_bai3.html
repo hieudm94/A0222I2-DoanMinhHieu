@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function numbers(a,b) {
+        if (a > b){
+            document.write("Tham số a lớn hơn tham số b");
+            return
+        } else if (a < b || a == b){
+            let sum = a + b;
+            document.write(sum);
+            return;
+        }
+
+    }
+    let number1= parseInt(prompt("Input A"));
+    let number2= parseInt(prompt("input B"));
+    let number= numbers(number1,number2);
+</script>
+</body>
+</html>

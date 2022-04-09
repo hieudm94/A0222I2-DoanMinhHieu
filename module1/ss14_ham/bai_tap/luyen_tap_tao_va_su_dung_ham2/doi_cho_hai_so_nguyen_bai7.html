@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Array = [];
+    let number1= parseInt(prompt("Input Number 1"));
+    let number2= parseInt(prompt("Input Number 2"));
+    Array.push(number1,number2)
+    function Index(Array) {
+        Array.reverse();
+        return Array;
+
+    }
+    let result = Index(Array);
+    document.write("2 số được nhập lần lượt là: " + Array + "<br>");
+    document.write("Vị trí sau khi được hoán đổi là: " + result);
+</script>
+</body>
+</html>

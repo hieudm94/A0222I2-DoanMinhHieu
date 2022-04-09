@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Input Number"));
+    function CheckNumber(number) {
+        if (number < 0){
+            document.write("False");
+            return number;
+        }else if (number > 0){
+            document.write("True");
+            return number;
+        }do {
+            number= parseInt(prompt("Input Number"));
+        }while (number == 0)
+        return  number;
+    }
+    let result = CheckNumber(number);
+    document.write(result);
+</script>
+</body>
+</html>
