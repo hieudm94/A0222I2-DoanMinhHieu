@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Array = [];
+    for (let i = 0 ; i < 6; i++) {
+        let number = prompt("Input value")
+        Array.push(number);
+    }
+    let NewArray= Array.toString();
+    let value= prompt("Input check value");
+    let count = 0;
+    let flag = false;
+    function Check(NewArray) {
+        for (let i = 0; i < NewArray.length ; i++){
+            if (value === NewArray[i]){
+                document.write("OK")
+                flag = true;
+                count++;
+                return value;
+            }
+        }
+        if (!flag)
+            document.write("NOK")
+            return value;
+    }
+    let result = Check(NewArray);
+    document.write(result);
+</script>
+</body>
+</html>
