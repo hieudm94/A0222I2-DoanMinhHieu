@@ -10,7 +10,11 @@
     let index = 1;
     function Array() {
         for (let i = 1; i <= number; i++){
-            index *= i
+            if (index >= 1) {
+                index *= i;
+            } else if ( index <= -1) {
+                index *= i;
+            }
         }
         return index;
     }

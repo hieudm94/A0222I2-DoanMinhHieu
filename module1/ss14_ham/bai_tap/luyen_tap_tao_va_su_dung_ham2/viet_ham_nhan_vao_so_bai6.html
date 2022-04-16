@@ -9,18 +9,21 @@
     let number = parseInt(prompt("Input Number"));
     function CheckNumber(number) {
         if (number < 0){
-            document.write("False");
-            return number;
+            return false;
         }else if (number > 0){
-            document.write("True");
-            return number;
+            return true;
         }do {
-            number= parseInt(prompt("Input Number"));
+            number= parseInt(prompt("Repeat Input Number"));
         }while (number == 0)
         return  number;
     }
     let result = CheckNumber(number);
-    document.write(result);
+    if (result){
+        alert('Nguyên Âm');
+    }
+    else {
+        alert('Nguyên Dương')
+    }
 </script>
 </body>
 </html>

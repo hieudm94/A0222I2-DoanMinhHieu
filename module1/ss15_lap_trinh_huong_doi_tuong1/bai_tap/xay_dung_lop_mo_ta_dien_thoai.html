@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả điện thoại</title>
+</head>
+<body>
+<script>
+    class MobilePhone {
+        constructor(pin,send,receiv) {
+            this.pin=pin;
+            this.send=send;
+            this.receiv=receiv;
+        }
+        Send(){
+            document.write(this.send + "Đang gởi tin nhắn có nội là: " + "<br>");
+        }
+        Receiv(){
+            document.write(this.receiv + "Đã nhận tin nhắn có nội dung là: " );
+        }
+    }
+    let Nokia = new MobilePhone(nokia);
+    Nokia.Send();
+    let Iphone= new MobilePhone(iphone);
+    Iphone.Receiv();
+</script>
+</body>
+</html>

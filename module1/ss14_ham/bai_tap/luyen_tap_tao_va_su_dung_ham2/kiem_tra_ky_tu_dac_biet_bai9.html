@@ -6,9 +6,9 @@
 </head>
 <body>
 <script>
-    let Array = [];
-    for (let i = 0 ; i < 6; i++) {
-        let number = prompt("Input value")
+    /*let Array = [];
+    let number = parseInt(prompt("Input value"));
+    for (let i = 1 ; i <= number; i++) {
         Array.push(number);
     }
     let NewArray= Array.toString();
@@ -21,18 +21,38 @@
                 document.write("OK")
                 flag = true;
                 count++;
-                return value;
             }
         }
-        if (!flag)
+        if (!flag){
             document.write("NOK")
+            }
             return value;
     }
     let result = Check(NewArray);
     if (flag == true){
         document.write(result + " số lần xuất hiện của ký tự: " + count);
     } else
-        document.write(result);
+        document.write(result);*/
+
+    function Check(value) {
+        let count = 0;
+        let Array = [1,2,3,4,5,5,6,7,7,6];
+        for (let i = 0; i < Array.length ; i++){
+            if (value == Array[i]){
+                count ++;
+            }
+        }
+        if (count === 0){
+            return -1;
+        }else
+            return count;
+    }
+    let input= parseInt(prompt("Input number"));
+    let check= Check(input);
+    if (Check(input) ===-1){
+        alert("-1");
+    } else
+        alert("số lần xuất hiện là " + Check(input));
 </script>
 </body>
 </html>

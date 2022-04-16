@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+<script>
+    /*class Temperature{
+        constructor(DoC) {
+            this.DoC = DoC;
+        }
+            TranF() {
+                 document.write("Độ F tương ứng là: " + (this.DoC*9/5)+32 + "<br>");
+            }
+            TranK(){
+                document.write("Độ K tương ứng là: " + (this.DoC+273.15));
+            }
+    }
+    let Tranf = new Temperature(25);
+    Tranf.TranF();
+    let Trank = new Temperature(25);
+    Trank.TranK();*/
+
+    let Temperature = function (DoC) {
+        this.DoC=DoC;
+        this.getTranF = function () {
+        return (this.DoC*9/5)+32;
+        }
+        this.getTranK = function () {
+        return (this.DoC+273.15);
+        }
+    }
+    let Tranf = new Temperature(25);
+    let tranf = Tranf.getTranF();
+    let Trank = new Temperature(25);
+    let trank = Trank.getTranK();
+    document.write("Độ F là: " + tranf + "<br>");
+    document.write("Độ K là: " + trank);
+
+
+</script>
+</body>
+</html>
