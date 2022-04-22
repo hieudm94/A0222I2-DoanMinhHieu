@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table style="background-color: darkseagreen">
+    <tr>
+        <th colspan="2" style="height: 30px">Bảng Kê khai lương</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="Input" placeholder="Nhập mức lương"></td>
+        <td><input type="button" onclick="Submit()" value="Submit"></td>
+    </tr>
+    <tr>
+        <td id="output" ></td>
+        <td><p>Mức lương ròng</p></td>
+    </tr>
+    <tr>
+        <td id="output1"></td>
+        <td><p>Mức thuế phải đóng</p></td>
+    </tr>
+</table>
+<script>
+    function Submit() {
+        let salary = document.getElementById("Input").value;
+        if (salary < 7000000){
+            document.getElementById("output").innerHTML=(salary-salary*5/100) + "VND";
+            document.getElementById("output1").innerHTML=(salary*5/100)+ "VND";
+        }else if (salary < 15000000){
+            document.getElementById("output").innerHTML=(salary-salary*10/100) + "VND";
+            document.getElementById("output1").innerHTML=(salary*10/100)+ "VND";
+        }else if (salary == 15000000){
+            document.getElementById("output").innerHTML=(salary-salary*20/100) + "VND";
+            document.getElementById("output1").innerHTML=(salary*20/100)+ "VND";
+        }
+
+
+    }
+</script>
+</body>
+</html>

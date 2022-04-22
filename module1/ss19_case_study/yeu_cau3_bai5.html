@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th colspan="2">Menu</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" placeholder="Nhập món" id="inputnumber">
+        </td>
+        <td>
+            <input type="button" onclick="submit()" value="Submit">
+        </td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Cafe</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Cam vắt</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Nước ép cà rốt</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Nước ép cà chua</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Nước lọc</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Nước dừa</td>
+    </tr>
+</table>
+<script>
+    let number = [1,2,3,4,5,6];
+    let index = ['Cafe','Cam vắt','Nước ép cà rốt','Nước ép cà chua','Nước lọc','Nước dừa'];
+    let money = [10000,20000,20000,20000,5000,20000];
+    function submit(){
+            let inputnumber = document.getElementById("inputnumber").value;
+            for (let i = 0; i < number.length; i++) {
+                if (inputnumber == number[i]) {
+                    alert("Bạn chọn: " + index[i]);
+                    let soluong = parseInt(prompt("Số lượng"));
+                    alert("Thành tiền :" + money[i] * soluong + "VND");
+                }
+            }
+    }
+
+
+
+</script>
+</body>
+</html>

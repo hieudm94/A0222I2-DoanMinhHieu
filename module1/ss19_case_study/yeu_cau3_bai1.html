@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=parseInt(prompt("nhập số lượng số chuỗi số cần tìm"))
+    let ArrayA = [];
+    let ArrayB =[];
+    let sum =0;
+    for (let i =0; i < number; i++){
+        let index=parseInt(prompt("Input Array"));
+        ArrayA.push(index);
+    }
+    for (let j = 0; j < ArrayA.length ; j++){
+        sum += ArrayA[j];
+        ArrayB.push(sum);
+    }
+    document.write(ArrayB);
+</script>
+</body>
+</html>

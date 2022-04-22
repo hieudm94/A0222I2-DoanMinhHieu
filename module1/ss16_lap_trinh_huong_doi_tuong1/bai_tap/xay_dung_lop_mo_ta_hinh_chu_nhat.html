@@ -13,10 +13,10 @@
             this.ChieuRong=ChieuRong;
         }
         DienTich(){
-            document.write("Diện tích hình chữ nhật là: " + this.ChieuDai*this.ChieuRong + "<br>");
+            alert("Diện tích hình chữ nhật là: " + this.ChieuDai*this.ChieuRong);
         }
         ChuVi(){
-            document.write("Chu vi hình chữ nhật là: " + (this.ChieuRong + this.ChieuDai)*2)
+            alert("Chu vi hình chữ nhật là: " + (this.ChieuRong + this.ChieuDai)*2)
         }
     }
     let rectangle = new Rectangle(2,5);
@@ -24,7 +24,7 @@
     rectangle.ChuVi();
 
     let ctx = document.getElementById("myCanvas").getContext("2d");
-    //ctx.fillStyle = "#FF0000";
+    ctx.fillStyle = "#FF0000";
     ctx.fillRect(Math.random()*250,Math.random()*250,150,50);
 
 

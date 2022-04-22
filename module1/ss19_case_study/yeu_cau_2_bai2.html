@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th colspan="2">Kiểm tra nguyên âm hay phụ âm</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="Input" placeholder="Nhập chữ cái cần kiểm tra">
+        </td>
+        <td>
+            <input type="button" onclick="Submit()" value="Check">
+        </td>
+    </tr>
+    <tr>
+        <td id="Display"></td>
+        <td>Kết quả</td>
+    </tr>
+    <script>
+        let Array = ['o', 'u', 'i', 'a', 'e','O', 'U', 'I', 'A', 'E' ];
+        function Submit() {
+            let check = document.getElementById("Input").value;
+            for (let i = 0; i < Array.length; i++){
+                if (check === Array[i]) {
+                    document.getElementById("Display").innerHTML = "Nguyên Âm";
+                    break;
+                }else if (check != Array[i]){
+                    document.getElementById("Display").innerHTML = "Phụ Âm";
+                }
+            }
+        }
+
+
+    </script>
+</table>
+</body>
+</html>
