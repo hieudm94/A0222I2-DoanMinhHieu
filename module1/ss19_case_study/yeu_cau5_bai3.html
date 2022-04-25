@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Number = parseInt(prompt("Nhập chiều dài mảng"));
+    let Array = [];
+    let NumberMin=0 ;
+    let NumberMax=0 ;
+    for (let i = 0 ; i <= Number ; i++){
+        Array.push(i);
+    }
+    for (let j = 1 ; j < Array.length ; j++){
+        if (Array[j] < NumberMin ){
+            NumberMin = Array[j];
+        }
+    }
+    for ( let k = 1 ; k <Array.length; k++){
+        if (Array[k] > NumberMax){
+            NumberMax = Array[k]
+        }
+    }
+    document.write("Mảng cần tìm: " + Array + "<br>");
+    document.write("Số nhỏ nhất trong mảng: " + NumberMin + "<br>");
+    document.write("Số lớn nhất trong mảng: " + NumberMax);
+</script>
+</body>
+</html>

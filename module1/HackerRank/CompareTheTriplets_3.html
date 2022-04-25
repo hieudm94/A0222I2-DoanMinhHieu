@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("nhập số lượng mảng cần tìm"));
+    let Array1 = [];
+    let Array2 = [];
+    let Arrcount1 = 0;
+    let Arrcount2 = 0;
+    for (let i = 0 ; i < number ; i++) {
+        let a = parseInt(prompt("nhập mảng Array1"));
+        do {
+            if (a < 0 || a > 100) {
+                a = parseInt(prompt("Nhập lại"));
+            } else
+                break;
+        } while (true)
+        Array1.push(a);
+    }
+    for (let i = 0 ; i < number ; i++){
+        let b = parseInt(prompt("nhập mảng Array2"));
+        do {
+            if (b<0 || b>100){
+                b=parseInt(prompt("Nhập lại"));
+            }else
+                break;
+        }while (true)
+        Array2.push(b);
+    }
+    for (let j = 0 ; j < number ; j++){
+        if (Array1[j] > Array2[j]){
+            Arrcount1++;
+        }else if (Array1[j] < Array2[j]){
+            Arrcount2++;
+        }else if (Array1[j] = Array2[j]){
+            Arrcount1 += 0;
+            Arrcount2+= 0;
+        }
+    }
+    document.write("Mảng A: " + Array1+ "<br>");
+    document.write("Điểm của mảng A: " + Arrcount1 + "<br>");
+    document.write("Mảng A: " + Array2+ "<br>")
+    document.write("Điểm của mảng B: " + Arrcount2 + "<br>");
+</script>
+</body>
+</html>

@@ -6,10 +6,36 @@
 </head>
 <body>
 <script>
-    let string = "tRuong    TaN   HAI";
-    let newstring = string.trim().toLocaleLowerCase();
-    let a = newstring[0].toUpperCase();
-    document.write(a)
+    /*function chuanhoa(string) {
+        let newstring = string.trim().toLowerCase().split(" ")
+        for (let i = 0; i < newstring.length; i++) {
+            newstring[i] = newstring[i][0].toUpperCase() + newstring[i].slice(1);
+        }
+        return newstring.join(" ");
+    }
+    let result = chuanhoa("tRuong    TaN   HAI");
+    console.log(result);*/
+    /*function chuanhoa(string) {
+        let newstring = string.split(" ");
+        for (let i = 0; i < newstring.length; i++) {
+            newstring[i] = newstring[i][0].toUpperCase() + newstring[i].slice(1);
+        }
+        return newstring.join(" ");
+    }
+    let result = chuanhoa("truong tan hai");
+    document.write(result);*/
+    let array = "ĐOàn         MiNh         HiẾU ";
+    let arrstr = array.toLowerCase().split(" ");
+    let Array = [];
+    for (let i = 0 ; i < arrstr.length ; i++) {
+        if (arrstr[i] !== "") {
+            Array.push(arrstr[i])
+        }
+    }
+    for (let j = 0; j < Array.length; j++){
+         document.write(Array[j][0].toUpperCase()+ Array[j].slice(1) + " ");
+    }
+
 </script>
 
 </body>

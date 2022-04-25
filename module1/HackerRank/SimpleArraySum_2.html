@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Số lượng mảng cần nhập là"));
+    do {
+        if (number<0 || number>1000){
+            number=parseInt(prompt("Nhập lại số lượng mảng cần tìm: "))
+        }else
+            break;
+    }while (true)
+    let Array =[];
+    let count = 0;
+    for (let i = 0 ; i < number ; i++){
+       let input = parseInt(prompt("Nhập mảng"));
+       do {
+           if (input<0 || input > 1000){
+               input =parseInt(prompt("Nhập lại mảng"));
+           } else
+               break;
+       }while (true)
+        Array.push(input);
+        count += input
+    }
+    document.write("Mảng vừa nhập là: " + Array + "<br>");
+    document.write("Tổng mảng vừa nhập là: " + count);
+</script>
+</body>
+</html>

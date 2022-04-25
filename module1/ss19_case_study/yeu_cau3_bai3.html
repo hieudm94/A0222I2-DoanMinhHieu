@@ -5,6 +5,20 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let ArrayA= [5,2,6];
+    let ArrayB= [6,3,4];
+    let max = ArrayA[0]/ArrayB[0] ;
+    for (let i = 1 ; i < ArrayA.length ; i++) {
+        for (let j = i; j < ArrayB.length; j++) {
+            if (ArrayA[i] / ArrayB[j] > max) {
+                max = ArrayA[i] / ArrayB[j];
+                document.write("Phân số lớn nhất là: " + ArrayA[i] + "/" + ArrayB[j])
+                document.write("Có chỉ số là: " + i);
+            }
+        }
+    }
 
+</script>
 </body>
 </html>

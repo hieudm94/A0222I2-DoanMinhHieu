@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberA= parseInt(prompt("Input number A"));
+    let numberB= parseInt(prompt("Input number B"));
+    do {
+        if (1000 < numberA || numberA< 1){
+            numberA = parseInt(prompt("Again A"));
+        }else if (1000 < numberB || numberB < 1){
+            numberB = parseInt(prompt("Again B"));
+        }else
+            break;
+
+    }while (true)
+    function sum(a,b) {
+        return (a+b);
+    }
+    let result = sum(numberA,numberB);
+    document.write("tổng cần tìm là: " + result)
+</script>
+</body>
+</html>
