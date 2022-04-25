@@ -6,20 +6,35 @@
 </head>
 <body>
 <script>
-    let NumberM = parseInt(prompt("Nhập số M"));
-    let NumberN = parseInt(prompt("Nhập số N"));
-    let total = NumberN*NumberM
-    let Array = [];
-    count = 0
-    for (let i = 0 ; i <= total ; i++){
-        Array.push(i);
-    }
-    for (let j = 0 ; j < Array.length ; j++){
-        if (Array[j]%2 == 0){
-            count += Array[j];
+    let rowArr = parseInt(prompt("input row:")); //3
+    let colArr = parseInt(prompt("input col:")); //4
+    let count = 0;
+    function total() {
+        let myArr2d = new Array(rowArr); //tạo mảng 1 chiều với 3 phần tử
+        for (let row = 0; row < myArr2d.length; row++) { //row = 0
+            myArr2d[row] = Array(colArr);
+
+            for (let col = 0; col < myArr2d[row].length; col++) {
+                value = parseInt(prompt("input [" + row + "][" + col + "]"));
+                myArr2d[row][col] = value;
+
+            }
         }
+
+        for (let row = 0; row < myArr2d.length; row++) {
+            for (let col = 0; col < myArr2d[row].length; col++) {
+                if(myArr2d[row][col] % 2 ==0){
+                    count += myArr2d[row][col];
+                }
+                document.write(myArr2d[row][col] + " ")
+            }
+            document.write("<br>")
+        }
+        document.write("tổng cần tìm là: " + count)
     }
-    document.write("Tổng các số chẳn cần tìm là: " + count);
+
+
+    total()
 </script>
 </body>
 </html>

@@ -6,10 +6,17 @@
 </head>
 <body>
 <script>
-    let str = 'hÀ nỘi';
-    let array = str.trim().toLocaleLowerCase();
-    let newstr= array.charAt(0).toUpperCase() + array.slice(1);
-    console.log(newstr);
+    let rowArr = parseInt(prompt("input row:")); //3
+    let colArr = parseInt(prompt("input col:")); //4
+
+    let newArr= Array (rowArr);
+    for (let row = 0 ; row < newArr.length; row ++){
+        newArr[row]= Array (colArr)
+        for (let col = 0 ; col < newArr[row].length ; col++ ){
+            value =parseInt(prompt("Input [" + row + "][" + col + "]"));
+
+        }
+    }
 </script>
 </body>
 </html>
